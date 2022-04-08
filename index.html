@@ -25,7 +25,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #131313;">
         <div class="navbar__container container-fluid">
             <a href="#home" class="navbar-brand" id="navbar__logo">SC | FrontEnd Dev</a>
-            <div class="navbar__toggle" id="mobile-menu">
+            <div class="navbar__toggle text-center" id="mobile-menu">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -45,7 +45,7 @@
                 <li class="navbar__item nav-item">
                     <a href="#skills" class="navbar__links" id="skills-page">Skills e CV</a>
                 </li>
-                <li class="navbar__btn">
+                <li class="navbar__btn text-center">
                     <a href="#contatti" class="button hvr-shrink" id="contatti-page">Contatti</a>
                 </li>
             </ul>
@@ -89,38 +89,44 @@
     </div>
 
     <!-- Services Section -->
-    <div class="services" id="services">
+    <div class="services container-fluid" id="services">
         <h1>I miei Progetti</h1>
         <div class="services__wrapper">
-            <div class="services__card">
-                <h2>CRM Aziendale</h2>
+            <div class="services__card card">
+                <h2 class="card-title">CRM Aziendale</h2>
                 <img class="iProg" src="images/DettagliCliente.jpg" alt="Pagina dei dettagli cliente">
-                <p>SPA Aziendale per la gestione di clienti e fatture (Angular) </p>
-                <a class="services__btn linkshadow"
-                            href="https://github.com/scarpino92/progettofinale_0721b">Link
-                            Progetto</a>
+                <div class="card-body">
+                    <p>SPA Aziendale per la gestione di clienti e fatture (Angular) </p>
+                    <a class="services__btn linkshadow" href="https://github.com/scarpino92/progettofinale_0721b">Link
+                        Progetto</a>
+                </div>
             </div>
-            <div class="services__card">
-                <h2>Movies App</h2>
+            <div class="services__card card">
+                <h2 class="card-title">Movies App</h2>
                 <img class="iProg" src="images/MoviesPage.jpg" alt="pagina dell'elenco films">
-                <p>SPA per la gestione e il salvataggio dei film preferiti (Angular)</p>
-                <a class="services__btn linkshadow"
-                            href="https://github.com/scarpino92/FE07B_progetto_sett12">Link
-                            Progetto</a>
+                <div class="card-body">
+                    <p>SPA per gestione e salvataggio di film preferiti (Angular)</p>
+                    <a class="services__btn linkshadow" href="https://github.com/scarpino92/FE07B_progetto_sett12">Link
+                        Progetto</a>
+                </div>
             </div>
-            <div class="services__card">
-                <h2>App Carrello Prodotti</h2>
+            <div class="services__card card">
+                <h2 class="card-title">App Carrello Prodotti</h2>
                 <img class="iProg" src="images/Cart.jpg" alt="Carrello page">
-                <p>SPA per l'acquisto di prodotti con carrello (Angular)</p>
-                <a class="services__btn linkshadow" href="https://github.com/scarpino92/FE07B_progetto_sett11">Link
-                            Progetto</a>
+                <div class="card-body">
+                    <p>SPA per l'acquisto di prodotti con carrello (Angular)</p>
+                    <a class="services__btn linkshadow" href="https://github.com/scarpino92/FE07B_progetto_sett11">Link
+                        Progetto</a>
+                </div>
             </div>
-            <div class="services__card">
-                <h2>Web Page Azienda</h2>
+            <div class="services__card card">
+                <h2 class="card-title">Web Page Azienda</h2>
                 <img class="iProg" src="images/Home.jpg" alt="Home Page">
-                <p>Web Page creata con Bootstrap 5 e SASS</p>
-                <a class="services__btn linkshadow" href="https://github.com/scarpino92/WebPage-BS">Link
-                            Progetto</a>
+                <div class="card-body">
+                    <p>Web Page creata con Bootstrap 5 e SASS</p>
+                    <a class="services__btn linkshadow" href="https://github.com/scarpino92/WebPage-BS">Link
+                        Progetto</a>
+                </div>
             </div>
         </div>
     </div>
@@ -164,7 +170,7 @@
     </div>
 
     <!-- Features Section -->
-    <div class="main box" id="contatti">
+    <div class="main box container-fluid" id="contatti">
         <div class="main__container">
             <div class="main__content centrato">
                 <h1>I miei Contatti</h1>
