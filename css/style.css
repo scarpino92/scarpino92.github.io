@@ -7,6 +7,8 @@
 body {
     background: #000;
     background: linear-gradient(to right, #161616, #000);
+    max-width: 100%;
+    min-width: 100%;
 }
 
 /* NAVBAR */
@@ -112,6 +114,7 @@ body {
     align-items: center; */
     text-decoration: none;
     padding: 0.5rem 1.2rem;
+    font-size: 1.7rem;
     height: 100%;
     width: 100%;
     border: none;
