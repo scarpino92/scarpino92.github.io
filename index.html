@@ -2,10 +2,9 @@
 <html lang="it">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Serena Carpino | FrontEnd Developer</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -18,253 +17,285 @@
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>Serena Carpino | FrontEnd Developer</title>
 </head>
 
 <body>
-    <!-- Navbar section -->
-    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #131313;">
-        <div class="navbar__container container-fluid">
-            <a href="#home" class="navbar-brand" id="navbar__logo">SC | FrontEnd Dev</a>
-            <div class="navbar__toggle text-center" id="mobile-menu">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
+    <div class="container-fluid">
+        <header>
+            <!-- Navbar section -->
+            <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #131313;">
+                <div class="container navbar__container">
+                    <a class="navbar-brand" href="#home" id="navbar__logo">SC | FrontEnd Dev</a>
+                    <button class="navbar-toggler" id="dropmenu" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse dropmobile" id="navbarNavDropdown">
+                        <ul class="navbar-nav navbar__menu">
+                            <li class="navbar__item my-3">
+                                <a class="navbar__links pb-1" aria-current="page" href="#home" id="home-page">Home</a>
+                            </li>
+                            <li class="navbar__item my-3">
+                                <a class="navbar__links pb-1" href="#about" id="about-page">Chi
+                                    Sono</a>
+                            </li>
+                            <li class="navbar__item my-3">
+                                <a class="navbar__links pb-1" href="#projects" id="projects-page">Progetti</a>
+                            </li>
+                            <li class="navbar__item my-3">
+                                <a class="navbar__links pb-1" href="#skills" id="skills-page">Skills e CV</a>
+                            </li>
+                            <li class="navbar__item text-center my-3 mx-3">
+                                <button class="navbar__links button px-4 bordershadow" href="#contacts"
+                                    id="contacts-page">Contatti</button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+
+        <main>
+            <!-- Presentation section -->
+            <div class="container presentation" id="home">
+                <div class="row presentation__container">
+                    <div class="col">
+                        <h1 class="presentation__heading">Ciao,<br> sono <span
+                                class="animate__animated animate__zoomIn animate__infinite infinite">Serena
+                                Carpino</span></h1>
+                        <p class="presentation__description mb-5">Front End Developer</p>
+                        <a class="button bordershadow center fs-5 mx-auto" href="#about">Scopri di più</a>
+                    </div>
+                </div>
             </div>
 
-            <!-- <div id="toggle-btn"></div> -->
-            <ul class="navbar__menu navbar-nav">
-                <li class="navbar__item nav-item">
-                    <a href="#home" class="navbar__links active" id="home-page">Home</a>
-                </li>
-                <li class="navbar__item nav-item">
-                    <a href="#about" class="navbar__links" id="about-page">Chi Sono</a>
-                </li>
-                <li class="navbar__item nav-item">
-                    <a href="#services" class="navbar__links" id="services-page">Progetti</a>
-                </li>
-                <li class="navbar__item nav-item">
-                    <a href="#skills" class="navbar__links" id="skills-page">Skills e CV</a>
-                </li>
-                <li class="navbar__btn text-center">
-                    <a href="#contatti" class="button hvr-shrink" id="contatti-page">Contatti</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
+            <!-- About section -->
+            <div class="container main" id="about">
+                <div class="row main__container">
+                    <div class="col-lg main__img--container">
+                        <div class="main__img--card">
+                            <img src="images/cv.png" alt="fotoFEdev">
+                        </div>
+                    </div>
+                    <div class="col-lg main__content">
+                        <h1 class="text-center">Chi sono?</h1>
+                        <h2 class="text-center">Sono una FrontEnd Developer</h2>
+                        <p>Mi chiamo <span class="work">Serena Carpino</span> e sono nata a Roma(IT). Sono laureata in
+                            Tecniche
+                            di
+                            Allevamento Animale ed Educazione cinofila all'<span class="studi">Università di
+                                Pisa</span>, sono
+                            <span class="work">Addestratrice</span> e <span class="work">Nutrizionista cinofila</span>.
+                            Ad un
+                            certo punto
+                            della mia vita
+                            ho sentito il bisogno di cambiare e grazie ad <span class="studi">Epicode Italia</span> sono
+                            diventata una
+                            Sviluppatrice FrontEnd. Ho una grande passione per gli animali, il calcio ed il design.</p>
+                        <span class="d-flex justify-content-center"><a class="main__btn bordershadow" href="#services">I
+                                miei progetti</a></span>
+                    </div>
+                </div>
+            </div>
 
-    <!-- Hero Section -->
-    <div class="hero container-fluid" id="home">
-        <div class="hero__container row">
-            <div class="col">
-                <h1 class="hero__heading">Ciao,<br> sono <span
-                        class="animate__animated animate__zoomIn animate__infinite infinite">Serena
-                        Carpino</span></h1>
-                <p class="hero__description mb-5">Front End Developer</p>
-                <a class="main__btn bordershadow" href="#about">Scopri di più</a>
-            </div>
-        </div>
-    </div>
+            <!-- Projects section -->
+            <div class="container">
+                <div class="row projects" id="projects">
+                    <h1 class="text-center">I miei Progetti</h1>
+                    <div class="col">
+                        <div class="row">
+                            <div class="col-lg-4 mb-4">
+                                <div class="card projects__card h-100">
+                                    <div class="card-body">
+                                        <h5 class="card-title text-center">CRM Aziendale</h5>
+                                        <img src="images/DettagliCliente.jpg" class="card-img-top"
+                                            alt="Pagina dei dettagli cliente">
+                                        <p class="card-text">SPA Aziendale per la gestione di clienti e fatture
+                                            (Angular)
+                                        </p>
+                                    </div>
+                                    <a class="projects__btn linkshadow"
+                                        href="https://www.linkedin.com/posts/serena-carpino-a52327235_frontenddevelopment-activity-6920345041026600960-H8hB?utm_source=linkedin_share&utm_medium=member_desktop_web">Link
+                                        Progetto</a>
+                                </div>
+                            </div>
 
-    <!-- About Section -->
-    <div class="main container-fluid" id="about">
-        <div class="main__container">
-            <div class="main__img--container">
-                <div class="main__img--card">
-                    <img src="images/cv.png" alt="fotoFEdev">
+                            <div class="col-lg-4 mb-4">
+                                <div class="card projects__card h-100">
+                                    <div class="card-body">
+                                        <h5 class="card-title text-center">Movies App</h5>
+                                        <img src="images/MoviesPage.jpg" class="card-img-top"
+                                            alt="Pagina dell'elenco films">
+                                        <p class="card-text">SPA per gestione e salvataggio di film preferiti (Angular)
+                                        </p>
+                                    </div>
+                                    <a class="projects__btn linkshadow"
+                                        href="https://github.com/scarpino92/FE07B_progetto_sett12">Link
+                                        Progetto</a>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 mb-4">
+                                <div class="card projects__card h-100">
+                                    <div class="card-body">
+                                        <h5 class="card-title text-center">App Carrello Prodotti</h5>
+                                        <img src="images/Cart.jpg" class="card-img-top" alt="Carrello page">
+                                        <p class="card-text">SPA per l'acquisto di prodotti con carrello (Angular)</p>
+                                    </div>
+                                    <a class="projects__btn linkshadow"
+                                        href="https://github.com/scarpino92/FE07B_progetto_sett11">Link
+                                        Progetto</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center my-4">
+                            <div class="col-lg-4">
+                                <div class="card projects__card h-100">
+                                    <div class="card-body">
+                                        <h5 class="card-title text-center">Web Page Azienda</h5>
+                                        <img src="images/Home.jpg" class="card-img-top" alt="Home Page">
+                                        <p class="card-text">Web Page creata con Bootstrap 5 e SASS</p>
+                                    </div>
+                                    <a class="projects__btn linkshadow"
+                                        href="https://github.com/scarpino92/WebPage-BS">Link
+                                        Progetto</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="main__content">
-                <h1>Chi sono?</h1>
-                <h2>Sono una FrontEnd Developer</h2>
-                <p>Mi chiamo <span class="work">Serena Carpino</span> e sono nata a Roma(IT). Sono laureata in Tecniche
-                    di
-                    Allevamento Animale ed Educazione cinofila all'<span class="studi">Università di Pisa</span>, sono
-                    <span class="work">Addestratrice</span> e <span class="work">Nutrizionista cinofila</span>. Ad un
-                    certo punto
-                    della mia vita
-                    ho sentito il bisogno di cambiare e grazie ad <span class="studi">Epicode Italia</span> sono
-                    diventata una
-                    Sviluppatrice FrontEnd. Ho una grande passione per gli animali, il calcio e ...l'UI!</p>
-                <a class="main__btn bordershadow" href="#services">I miei progetti</a>
-            </div>
-        </div>
-    </div>
 
-    <!-- Services Section -->
-    <div class="services container-fluid" id="services">
-        <h1>I miei Progetti</h1>
-        <div class="services__wrapper">
-            <div class="services__card card">
-                <h2 class="card-title">CRM Aziendale</h2>
-                <img class="iProg" src="images/DettagliCliente.jpg" alt="Pagina dei dettagli cliente">
-                <div class="card-body">
-                    <p>SPA Aziendale per la gestione di clienti e fatture (Angular) </p>
-                    <a class="services__btn linkshadow" href="https://github.com/scarpino92/progettofinale_0721b">Link
-                        Progetto</a>
+            <!-- Skills section -->
+            <div class="container skills" id="skills">
+                <div class="row mx-auto">
+                    <h1>Le mie Skills</h1>
+                    <div class="col-md-4 col-sm-6"><div class="skills__card skillshadow">
+                        <img class="skills__img" src="images/html5.png" alt="Html5 Logo">
+                    </div></div>
+                    <div class="col-md-4 col-sm-6"><div class="skills__card skillshadow">
+                        <img class="skills__img" src="images/css3.png" alt="Css3 Logo">
+                    </div></div>
+                    <div class="col-md-4 col-sm-6"><div class="skills__card skillshadow">
+                        <img class="skills__img" src="images/js.png" alt="JavaScript Logo">
+                    </div></div>
+                
+                    <div class="col-md-4 col-sm-6"><div class="skills__card skillshadow">
+                        <img class="skills__img" src="images/bootstrap.png" alt="Bootstrap Logo">
+                    </div></div>
+                    <div class="col-md-4 col-sm-6"><div class="skills__card skillshadow">
+                        <img class="skills__img" src="images/angular.png" alt="Angular Logo">
+                    </div></div>
+                    <div class="col-md-4 col-sm-6"><div class="skills__card skillshadow">
+                        <img class="skills__img" src="images/typescript.png" alt="Typescript Logo">
+                    </div></div>
+                
+                    <div class="col-md-4 col-sm-6"><div class="skills__card skillshadow">
+                        <img class="skills__img" src="images/sass.png" alt="Sass Logo">
+                    </div></div>
+                    <div class="col-md-4 col-sm-6"><div class="skills__card skillshadow">
+                        <img class="skills__img" src="images/jquery.png" alt="Jquery Logo">
+                    </div></div>
+                    <div class="col-md-4 col-sm-6"><div class="skills__card skillshadow">
+                        <img class="skills__img" src="images/npm.png" alt="Npm Logo">
+                    </div></div>
+                
+                    <div class="col-md-4 col-sm-6"><div class="skills__card skillshadow">
+                        <img class="skills__img" src="images/github.png" alt="Github Logo">
+                    </div></div>
+                    <div class="col-md-4"></div>
+                    <div class="col-md-4"></div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-md-6  d-flex justify-content-center">
+                        <a class="main__btn bordershadow" href="images/CV Serena Carpino.png">Curriculum (ITA)</a>
+                    </div>
+                    <div class="col-md-6  d-flex justify-content-center">
+                        <a class="main__btn bordershadow" href="images/EN CV Serena Carpino.png">Curriculum
+                            (ENG)</a>
+                    </div>
                 </div>
             </div>
-            <div class="services__card card">
-                <h2 class="card-title">Movies App</h2>
-                <img class="iProg" src="images/MoviesPage.jpg" alt="pagina dell'elenco films">
-                <div class="card-body">
-                    <p>SPA per gestione e salvataggio di film preferiti (Angular)</p>
-                    <a class="services__btn linkshadow" href="https://github.com/scarpino92/FE07B_progetto_sett12">Link
-                        Progetto</a>
-                </div>
-            </div>
-            <div class="services__card card">
-                <h2 class="card-title">App Carrello Prodotti</h2>
-                <img class="iProg" src="images/Cart.jpg" alt="Carrello page">
-                <div class="card-body">
-                    <p>SPA per l'acquisto di prodotti con carrello (Angular)</p>
-                    <a class="services__btn linkshadow" href="https://github.com/scarpino92/FE07B_progetto_sett11">Link
-                        Progetto</a>
-                </div>
-            </div>
-            <div class="services__card card">
-                <h2 class="card-title">Web Page Azienda</h2>
-                <img class="iProg" src="images/Home.jpg" alt="Home Page">
-                <div class="card-body">
-                    <p>Web Page creata con Bootstrap 5 e SASS</p>
-                    <a class="services__btn linkshadow" href="https://github.com/scarpino92/WebPage-BS">Link
-                        Progetto</a>
-                </div>
-            </div>
-        </div>
-    </div>
 
-    <!-- Skills -->
-    <div class="skills container-fluid" id="skills">
-        <h1>Le mie Skills</h1>
-        <div class="skills__wrapper">
-            <div class="skills__card skillshadow">
-                <img class="skills__img" src="images/html5.png" alt="Html5 Logo">
+            <!-- Contacts section -->
+            <div class="container contacts" id="contatti">
+                <div class="row contacts__container">
+                    <h1 class="text-center mb-5">I miei Contatti</h1>
+                    <div class="col-md-6 contacts__content text-center">
+                        <h2>Ti interessa il mio lavoro?</h2>
+                        <p>Contattami subito!!</p>
+                        <button class="main__btn bordershadow"><a href="mailto:serecarpino@gmail.com">Invia
+                                email</a></button>
+                    </div>
+                    <div class="col-md-6 mx-auto my-5" id="card-2">
+                        <p class="contatti">
+                            <span>
+                                <a href="https://github.com/scarpino92"><i class="bi bi-github"></i> Github</a>
+                            </span>
+                        </p>
+                        <p class="contatti">
+                            <span>
+                                <a href="https://www.linkedin.com/in/serena-carpino-a52327235/"><i
+                                        class="bi bi-linkedin"></i>
+                                    LinkedIn</a>
+                            </span>
+                        </p>
+                        <p class="contatti">
+                            <span>
+                                <a href="https://www.facebook.com/serena.carpino.10"><i class="bi bi-facebook"></i>
+                                    Facebook</a>
+                            </span>
+                        </p>
+                        <p class="contatti">
+                            <span>
+                                <a href="https://www.instagram.com/scarpino_7/"><i class="bi bi-instagram"></i>
+                                    Instagram</a>
+                            </span>
+                        </p>
+                        <p class="contatti">
+                            <span>
+                                <a href="mailto:serecarpino@gmail.com"><i class="bi bi-envelope"></i>
+                                    Email</a>
+                            </span>
+                        </p>
+                    </div>
+                </div>
             </div>
-            <div class="skills__card skillshadow">
-                <img class="skills__img" src="images/css3.png" alt="Css3 Logo">
-            </div>
-            <div class="skills__card skillshadow">
-                <img class="skills__img" src="images/js.png" alt="JavaScript Logo">
-            </div>
-            <div class="skills__card skillshadow">
-                <img class="skills__img" src="images/bootstrap.png" alt="Bootstrap Logo">
-            </div>
-            <div class="skills__card skillshadow">
-                <img class="skills__img" src="images/angular.png" alt="Angular Logo">
-            </div>
-            <div class="skills__card skillshadow">
-                <img class="skills__img" src="images/typescript.png" alt="Typescript Logo">
-            </div>
-            <div class="skills__card skillshadow">
-                <img class="skills__img" src="images/sass.png" alt="Sass Logo">
-            </div>
-            <div class="skills__card skillshadow">
-                <img class="skills__img" src="images/jquery.png" alt="Jquery Logo">
-            </div>
-            <div class="skills__card skillshadow">
-                <img class="skills__img" src="images/npm.png" alt="Npm Logo">
-            </div>
-            <div class="skills__card skillshadow">
-                <img class="skills__img" src="images/github.png" alt="Github Logo">
-            </div>
-        </div>
-        <a class="main__btn bordershadow" href="images/CV Serena Carpino.png">Visualizza il mio CV</a>
-    </div>
+        </main>
 
-    <!-- Features Section -->
-    <div class="main box container-fluid" id="contatti">
-        <div class="main__container">
-            <div class="main__content centrato">
-                <h1>I miei Contatti</h1>
-                <h2>Ti interessa il mio lavoro?</h2>
-                <p style="text-align:center">Contattami subito!!</p>
-                <button class="main__btn bordershadow"><a href="mailto:serecarpino@gmail.com">Invia email</a></button>
-            </div>
-            <div class="main__img--container box">
-                <div id="card-2">
-                    <p class="contatti">
-                        <span>
-                            <a href="https://github.com/scarpino92"><i class="bi bi-github"></i> Github</a>
-                        </span>
-                    </p>
-                    <p class="contatti">
-                        <span>
-                            <a href="https://www.linkedin.com/in/serena-carpino-a52327235/"><i
-                                    class="bi bi-linkedin"></i>
-                                LinkedIn</a>
-                        </span>
-                    </p>
-                    <p class="contatti">
-                        <span>
-                            <a href="https://www.facebook.com/serena.carpino.10"><i class="bi bi-facebook"></i>
-                                Facebook</a>
-                        </span>
-                    </p>
-                    <p class="contatti">
-                        <span>
-                            <a href="https://www.instagram.com/scarpino_7/"><i class="bi bi-instagram"></i>
-                                Instagram</a>
-                        </span>
-                    </p>
-                    <p class="contatti">
-                        <span>
-                            <a href="mailto:serecarpino@gmail.com"><i class="bi bi-envelope"></i>
-                                Email</a>
-                        </span>
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Footer Section -->
-    <div class="footer__container container-fluid">
-        <div class="footer__links">
-            <div class="footer__link--wrapper">
-                <div class="footer__link--items">
-                    <a href="#about">Chi Sono</a>
-                    <span>Front End Development</span>
-                    <span>UI / UX</span>
-                    <span>Esperienza</span>
-                </div>
-                <div class="footer__link--items">
-                    <a href="#services">Progetti</a>
-                    <span>Javascript</span> <span>Angular</span>
-                    <span>Bootstrap</span>
-                </div>
-            </div>
-            <div class="footer__link--wrapper">
-                <div class="footer__link--items">
-                    <a href="#skills">Skills e CV</a>
-                    <span>Hard Skills</span> <span>Soft Skills</span>
-                    <span>Curriculum Vitae</span>
-                </div>
-                <div class="footer__link--items">
-                    <a href="#contatti">Social</a>
-                    <span>Contattami</span>
-                </div>
-            </div>
-        </div>
-        <section class="social__media">
-            <div class="social__media--wrap">
-                <div class="footer__logo">
+        <footer>
+            <!-- Footer section -->
+            <div class="container">
+                <div class="row mx-auto pt-4 p-3 social__media">
+                    <div class="col footer__logo">
                     <a href="/" id="footer__logo">SC | FE Dev </a>
-                </div>
-                <p class="website__rights">©Serena Carpino | Front End Developer. All rights reserved</p>
-                <div class="social__icons">
-                    <a href="https://www.facebook.com/serena.carpino.10" class="social__icon--link" target="_blank"><i
-                            class="bi bi-facebook"></i></a>
-                    <a href="https://www.instagram.com/scarpino_7/" class="social__icon--link"><i
-                            class="bi bi-instagram"></i></a>
-                    <a href="https://github.com/scarpino92" class="social__icon--link"><i class="bi bi-github"></i></a>
-                    <a href="https://www.linkedin.com/in/serena-carpino-a52327235/" class="social__icon--link"><i
-                            class="bi bi-linkedin"></i></a>
+                    </div>
+                    <div class="col">
+                        <p class="website__rights">©Serena Carpino | Front End Developer. All rights reserved</p>
+                    </div>
+                    <div class="col">
+                        <div class="social__icons">
+                            <a href="https://www.facebook.com/serena.carpino.10" class="social__icon--link" target="_blank"><i
+                                    class="bi bi-facebook"></i></a>
+                            <a href="https://www.instagram.com/scarpino_7/" class="social__icon--link"><i
+                                    class="bi bi-instagram"></i></a>
+                            <a href="https://github.com/scarpino92" class="social__icon--link"><i class="bi bi-github"></i></a>
+                            <a href="https://www.linkedin.com/in/serena-carpino-a52327235/" class="social__icon--link"><i
+                                    class="bi bi-linkedin"></i></a>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </section>
+        </footer>
     </div>
 
     <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
 </body>
 
 </html>
