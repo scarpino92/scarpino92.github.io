@@ -1,7 +1,7 @@
 * {
     box-sizing: border-box;
     font-family: 'Nova Cut', cursive;
-    scroll-behavior: smooth;
+    max-width: 100%;
 }
 
 body {
@@ -50,7 +50,7 @@ body {
     align-items: center;
     cursor: pointer;
     text-decoration: none;
-    font-size: 1.7rem;
+    font-size: 1.5rem;
 }
 
 .navbar-nav {
@@ -235,7 +235,7 @@ body {
     margin: 0 auto;
     height: 90%;
     text-align: center;
-    padding: 30px;
+    padding: 0.3rem;
 }
 
 .presentation__heading {
@@ -256,7 +256,7 @@ body {
 }
 
 .presentation__description {
-    font-size: 5rem;
+    font-size: 4.5rem;
     background: #da22ff;
     background: -webkit-linear-gradient(to right, #9114ff, #da22ff);
     background: linear-gradient(to right, #8f0eff, #da22ff);
@@ -618,10 +618,10 @@ body {
 }
 
 .contatti {
-    font-size: 2.2rem;
+    font-size: 2rem;
     color: #fff;
     margin: 0 auto;
-    padding: 0.3rem;
+    padding: 0.2rem;
 }
 
 /* Footer CSS */
