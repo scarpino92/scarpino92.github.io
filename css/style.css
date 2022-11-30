@@ -408,7 +408,7 @@ body {
     padding: 1rem 0;
     max-height: 25rem;
     max-width: 25rem;
-    border-radius: 100px;
+    border-radius: 1000px;
     display: flex;
     flex-direction: column;
     justify-content: center;
