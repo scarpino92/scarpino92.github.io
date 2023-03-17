@@ -70,3 +70,22 @@ window.addEventListener('click', highlightMenu);
 // };
 
 // toggleBtn.addEventListener('click', changeMode);
+
+$(document).ready(function() {
+    projectLink();
+});
+
+function projectLink() {
+    $('#crmAziendale').on('click', function(){
+        window.location.href = "https://www.linkedin.com/posts/serena-carpino-a52327235_frontenddevelopment-activity-6920345041026600960-H8hB?utm_source=linkedin_share&utm_medium=member_desktop_web";
+    });
+    $('#moviesApp').on('click', function(){
+        window.location.href = "https://github.com/scarpino92/FE07B_progetto_sett12";
+    });
+    $('#appCarrelloProdotti').on('click', function() {
+        window.location.href = "https://github.com/scarpino92/FE07B_progetto_sett11";
+    });
+    $('#webPageAzienda').on('click', function(){
+        window.location.href = "https://github.com/scarpino92/WebPage-BS";
+    })
+}
